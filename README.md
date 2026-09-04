@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # GitHub Repository Health Analyzer
 
 A Python command-line tool that gives a quick, readable health overview of any public GitHub repository.
@@ -81,6 +80,5 @@ Covers:
 - `project.py` is the root-level entry point
 - `main()` is present
 - More than 3 additional functions have automated tests in the root-level `test_project.py`
-=======
+
 # github-repo-health-analyzer
->>>>>>> b285104e942bda2024dad304f3d37fdba1aa2451
