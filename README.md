@@ -18,15 +18,15 @@ A Python command-line tool that gives a quick, readable health overview of any p
 
 Two intentionally simple, transparent checks:
 
-- **Stale flag** — most recent push is more than 6 months old
-- **Low interest flag** — fewer than 10 stars
+- **Stale flag** - most recent push is more than 6 months old
+- **Low interest flag** - fewer than 10 stars
 
-These are warnings, not quality judgments — a small or quiet project can still be valuable. Missing or malformed timestamps are handled safely instead of crashing the report.
+These are warnings, not quality judgments - a small or quiet project can still be valuable. Missing or malformed timestamps are handled safely instead of crashing the report.
 
 ## Design principle: network vs. logic separation
 
 - `fetch_repo_data` and `fetch_contributors` are the **only** functions that call GitHub
-- All parsing, health checks, and formatting functions work on plain Python values — no network calls
+- All parsing, health checks, and formatting functions work on plain Python values - no network calls
 - This makes the core logic:
   - Deterministic
   - Easy to test with hand-written data
